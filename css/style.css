@@ -240,3 +240,59 @@ a:hover {
     padding: 16px;
   }
 }
+
+/* ===== WORK SECTION ===== */
+.work-category {
+  color: #22d3ee;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.work-card {
+  background: #0b1220;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .3s ease;
+}
+
+.work-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.40);
+}
+
+.work-body {
+  padding: 15px 20px;
+}
+
+.work-title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.work-desc {
+  font-size: 14px;
+  color: #b6c3d4;
+  margin-bottom: 12px;
+}
+
+.work-body a {
+  padding: 6px 12px;
+  background: #22d3ee;
+  color: #000;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.work-body a:hover {
+  background: #38e0ff;
+}
