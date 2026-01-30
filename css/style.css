@@ -49,7 +49,7 @@ body {
   align-items: center;        /* CENTRALIZA verticalmente */
   justify-content: center;    /* Garante centralização */
   background:
-    linear-gradient(135deg, rgba(50,70,90,0.20), rgba(50,70,90,0.10)),
+    linear-gradient(135deg, rgba(50,70,90,0.30), rgba(50,70,90,0.20)),
     url("../img/hero.jpg") center/cover no-repeat;
 }
 
