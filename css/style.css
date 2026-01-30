@@ -1,36 +1,161 @@
-.hero {
-  height: 100vh;
-  background: linear-gradient(
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.6)
-  ), url("../img/hero.jpg") center/cover no-repeat;
+/* ------------------------------
+   RESET
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero h1 {
-  font-size: 56px;
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
+.navbar {
+  padding: 18px 0;
+  background-color: #0b1220 !important;
+}
+
+.navbar-brand {
+  font-size: 22px;
   font-weight: 700;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-top: 10px;
+.nav-link {
+  font-size: 16px;
+  margin-left: 14px;
+  color: #cdd3df !important;
 }
 
-.hero-photo img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #5ab9ea; /* cor da borda */
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+.nav-link:hover {
+  color: #ffffff !important;
 }
 
+
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
+.hero {
+  min-height: 90vh;
+  padding-top: 110px; /* Espaço por causa da navbar fixa */
+  padding-bottom: 60px;
+
+  /* Fundo escuro elegante com leve gradiente */
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+}
+
+/* Container interno */
 .hero .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
+/* Texto do hero */
 .hero-text {
-  max-width: 500px;
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #b6c3d4;
+}
+
+
+/* ------------------------------
+   FOTO REDONDA
+--------------------------------*/
+.hero-photo img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  /* Borda estilo "anel" mais moderna */
+  padding: 6px;
+  background: linear-gradient(135deg, #5ab9ea, #22d3ee);
+
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ------------------------------
+   SEÇÕES INTERNAS
+--------------------------------*/
+section.container {
+  color: #e2e8f0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #f1f5f9;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+/* ------------------------------
+   LINKS
+--------------------------------*/
+a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #fff;
+}
+
+
+/* ------------------------------
+   RESPONSIVIDADE
+--------------------------------*/
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-text p {
+    text-align: center;
+  }
 }
