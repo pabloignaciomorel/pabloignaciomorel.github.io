@@ -296,3 +296,12 @@ a:hover {
 .work-body a:hover {
   background: #38e0ff;
 }
+
+/* SEÇÕES COM FUNDO BRANCO */
+section.container {
+  background-color: #ffffff;   /* fundo branco */
+  color: #0f172a;              /* texto azul-escuro */
+  padding: 60px 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
