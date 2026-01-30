@@ -193,7 +193,7 @@ a:hover {
   width: var(--w);
   background-image:
     repeating-linear-gradient(-45deg, rgba(0,0,0,0.13) 0 10px, rgba(0,0,0,0) 10px 20px),
-    linear-gradient(135deg, #22d3ee, #0ea5e9);
+    linear-gradient(135deg, #1ecf74, #0fbf63);
 }
 
 /* ------------------------------
