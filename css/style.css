@@ -257,3 +257,15 @@ a:hover {
   .skill-card { padding: 16px; }
   .skill-row { margin-bottom: 14px; }
 }
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-icon {
+    width: 24px;
+    height: 24px;
+}
