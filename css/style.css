@@ -40,26 +40,31 @@ body {
 
 
 /* ------------------------------
-   HERO SECTION (com hero.jpg)
+   HERO SECTION (fundo + centralização)
 --------------------------------*/
 .hero {
-  min-height: 90vh;
-  padding-top: 120px;
-  padding-bottom: 60px;
-
+  height: 100vh; /* ocupa tela inteira */
+  padding-top: 80px; /* compensar navbar fixa */
+  display: flex;
+  align-items: center;        /* CENTRALIZA verticalmente */
+  justify-content: center;    /* Garante centralização */
   background:
-    linear-gradient(135deg, rgba(15,23,42,0.92), rgba(15,23,42,0.92)),
+    linear-gradient(135deg, rgba(15,23,42,0.90), rgba(15,23,42,0.90)),
     url("../img/hero.jpg") center/cover no-repeat;
 }
 
-.hero .container {
+.hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
+
+/* Texto */
 .hero-text {
   max-width: 550px;
 }
@@ -79,18 +84,18 @@ body {
 
 /* FOTO REDONDA */
 .hero-photo img {
-  width: 230px;
-  height: 230px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 50%;
   padding: 6px;
   background: linear-gradient(135deg, #5ab9ea, #22d3ee);
-  box-shadow: 0 0 25px rgba(0,0,0,0.45);
+  box-shadow: 0 0 28px rgba(0,0,0,0.40);
 }
 
 
 /* ------------------------------
-   SEÇÕES
+   SEÇÕES INTERNAS
 --------------------------------*/
 section.container {
   color: #e2e8f0;
@@ -127,6 +132,11 @@ a:hover {
    RESPONSIVIDADE
 --------------------------------*/
 @media (max-width: 992px) {
+  .hero-content {
+    justify-content: center;
+    text-align: center;
+  }
+
   .hero-text h1 {
     font-size: 38px;
   }
@@ -139,7 +149,9 @@ a:hover {
 
 @media (max-width: 576px) {
   .hero {
-    text-align: center;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 100px;
   }
 
   .hero-photo {
