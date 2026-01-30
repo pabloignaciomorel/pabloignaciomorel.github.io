@@ -88,27 +88,32 @@ body {
 }
 
 /* ------------------------------
-   SEÇÕES INTERNAS (FUNDO BRANCO)
+   SEÇÕES INTERNAS SEM BORDAS
 --------------------------------*/
 .section-block {
+  width: 100%;
   background-color: #ffffff;   /* fundo branco */
-  color: #1a1a1a;              /* texto preto suave */
-  padding: 60px 40px;
-  margin-bottom: 40px;
-  border-radius: 0;            /* sem bordas */
+  color: #1a1a1a;              /* texto escuro */
+  padding: 60px 80px;          /* espaçamento interno */
+  margin: 0;                   /* remove bordas laterais */
+  border: none;                /* remove qualquer borda */
+  border-radius: 0;            /* remove arredondamento */
 }
 
 /* Títulos das seções */
 .section-block h2 {
-  color: #0f172a;              /* azul escuro */
+  color: #0f172a;
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 32px;
 }
 
-/* Listas */
+/* Texto e listas */
+.section-block p,
 .section-block ul li {
-  margin-bottom: 10px;
+  color: #1a1a1a;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* ------------------------------
@@ -128,11 +133,11 @@ a:hover {
    SKILLS
 --------------------------------*/
 .section-title {
-  color: #0f172a; /* texto azul escuro */
+  color: #0f172a;
 }
 
 .skill-card {
-  background: #f7f9fc;          /* cinza claro */
+  background: #f7f9fc;
   border: 1px solid #e1e5ea;
   border-radius: 10px;
   padding: 20px;
@@ -171,7 +176,6 @@ a:hover {
   object-fit: contain;
 }
 
-/* Valor % */
 .skill-value {
   color: #555;
   font-size: 14px;
@@ -296,5 +300,9 @@ a:hover {
 
   .skill-card {
     padding: 16px;
+  }
+
+  .section-block {
+    padding: 40px 20px;
   }
 }
