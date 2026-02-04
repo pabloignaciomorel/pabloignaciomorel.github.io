@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pablo Ignacio | Portfólio</title>
 
   <!-- Bootstrap 5 -->
@@ -18,7 +19,7 @@
     <div class="container">
       <a class="navbar-brand" href="#">Pablo Ignacio</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -28,6 +29,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -205,130 +207,193 @@
   </section>
 
   <!-- WORK -->
-<section id="work" class="section-block">
-  <h2 class="section-title mb-4">Work</h2>
+  <section id="work" class="section-block">
+    <h2 class="section-title mb-4">Work</h2>
 
-  <!-- ===== CATEGORIA: PROCESS MINING ===== -->
-  <h3 class="work-category">Process Mining</h3>
-  <div class="row g-4 mb-5">
+    <!-- ===== CATEGORIA: PROCESS MINING ===== -->
+    <h3 class="work-category">Process Mining</h3>
+    <div class="row g-4 mb-5">
 
-    <!-- Card -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/process-mining-1.jpg
-        <div class="work-body">
-          <h4 class="work-title">Análise de Fluxo Real</h4>
-          <p class="work-desc">Descoberta de processos, variabilidade e gargalos utilizando logs de eventos.</p>
-          https://github.com/seuusuario/process-mining-projeto1View Repo</a>
+      <!-- Card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/process-mining-1.jpg" alt="Process Mining - Análise de Fluxo Real">
+          <div class="work-body">
+            <h4 class="work-title">Análise de Fluxo Real</h4>
+            <p class="work-desc">Descoberta de processos, variabilidade e gargalos utilizando logs de eventos.</p>
+            <a class="work-link" href="https://github.com/seuusuario/process-mining-projeto1" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outro card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/process-mining-2.jpg" alt="Process Mining - Modelagem e Conformidade">
+          <div class="work-body">
+            <h4 class="work-title">Modelagem e Conformidade</h4>
+            <p class="work-desc">Comparação entre processo teórico e processo real usando conformance checking.</p>
+            <a class="work-link" href="https://github.com/seuusuario/process-mining-projeto2" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== CATEGORIA: POWER PLATFORM ===== -->
+    <h3 class="work-category">Power Platform</h3>
+    <div class="row g-4 mb-5">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/powerapp-1.jpg" alt="Power Apps - Workflow de Aprovação">
+          <div class="work-body">
+            <h4 class="work-title">Power Apps – Workflow de Aprovação</h4>
+            <p class="work-desc">Aplicativo para automatizar decisões e aprovações entre áreas.</p>
+            <a class="work-link" href="https://github.com/seuusuario/powerapps-aprovacao" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== CATEGORIA: INTELIGÊNCIA ARTIFICIAL ===== -->
+    <h3 class="work-category">Inteligência Artificial</h3>
+    <div class="row g-4 mb-5">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/ia-1.jpg" alt="IA - Classificação de Eventos">
+          <div class="work-body">
+            <h4 class="work-title">Classificação de Eventos</h4>
+            <p class="work-desc">Modelo para categorizar chamados internos com base em NLP.</p>
+            <a class="work-link" href="https://github.com/seuusuario/ia-classificacao" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== CATEGORIA: DIAGNÓSTICO DE PROCESSOS ===== -->
+    <h3 class="work-category">Diagnóstico de Processos</h3>
+    <div class="row g-4 mb-5">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/diagnostico-1.jpg" alt="Diagnóstico - Mapeamento AS-IS">
+          <div class="work-body">
+            <h4 class="work-title">Mapeamento AS-IS</h4>
+            <p class="work-desc">Análise do processo real, identificação de riscos e oportunidades.</p>
+            <a class="work-link" href="https://github.com/seuusuario/diagnostico-as-is" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== CATEGORIA: DASHBOARDS ===== -->
+    <h3 class="work-category">Dashboards</h3>
+    <div class="row g-4 mb-5">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/dashboard-1.jpg" alt="Dashboards - Dashboard de Governança">
+          <div class="work-body">
+            <h4 class="work-title">Dashboard de Governança</h4>
+            <p class="work-desc">Monitoramento de KPIs, eficiência e pipeline de projetos.</p>
+            <a class="work-link" href="https://github.com/seuusuario/dashboard-governanca" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===== CATEGORIA: RELATÓRIOS ===== -->
+    <h3 class="work-category">Relatórios</h3>
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/work/relatorio-1.jpg" alt="Relatórios - Relatório Operacional">
+          <div class="work-body">
+            <h4 class="work-title">Relatório Operacional</h4>
+            <p class="work-desc">Documentação de performance mensal e insights decisórios.</p>
+            <a class="work-link" href="https://github.com/seuusuario/relatorio-operacional" target="_blank" rel="noopener noreferrer">
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section-block">
+    <h2 class="section-title mb-4">Certifications</h2>
+
+    <div class="row g-4">
+      <!-- Cert 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/certifications/cert-1.jpg" alt="Certificação - Lean Six Sigma Green Belt">
+          <div class="work-body">
+            <h4 class="work-title">Lean Six Sigma Green Belt</h4>
+            <p class="work-desc">Melhoria contínua, redução de desperdícios e análise de causa raiz.</p>
+            <a class="work-link" href="https://www.credly.com/" target="_blank" rel="noopener noreferrer">
+              Ver credencial
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/certifications/cert-2.jpg" alt="Certificação - Microsoft Power BI (PL-300)">
+          <div class="work-body">
+            <h4 class="work-title">Microsoft Power BI (PL-300)</h4>
+            <p class="work-desc">Modelagem, DAX, visualização e governança de relatórios e datasets.</p>
+            <a class="work-link" href="https://learn.microsoft.com/credentials/" target="_blank" rel="noopener noreferrer">
+              Ver credencial
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="work-card">
+          <img class="work-img" src="img/certifications/cert-3.jpg" alt="Certificação - Power Platform Fundamentals (PL-900)">
+          <div class="work-body">
+            <h4 class="work-title">Power Platform Fundamentals (PL-900)</h4>
+            <p class="work-desc">Fundamentos de Power Apps, Power Automate, Power BI e Dataverse.</p>
+            <a class="work-link" href="https://learn.microsoft.com/credentials/" target="_blank" rel="noopener noreferrer">
+              Ver credencial
+            </a>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Outro card -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/process-mining-2.jpg
-        <div class="work-body">
-          <h4 class="work-title">Modelagem e Conformidade</h4>
-          <p class="work-desc">Comparação entre processo teórico e processo real usando conformance checking.</p>
-          https://github.com/seuusuario/process-mining-projeto2View Repo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!-- ===== CATEGORIA: POWER PLATFORM ===== -->
-  <h3 class="work-category">Power Platform</h3>
-  <div class="row g-4 mb-5">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/powerapp-1.jpg
-        <div class="work-body">
-          <h4 class="work-title">Power Apps – Workflow de Aprovação</h4>
-          <p class="work-desc">Aplicativo para automatizar decisões e aprovações entre áreas.</p>
-          https://github.com/seuusuario/powerapps-aprovacaoView Repo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!-- ===== CATEGORIA: INTELIGÊNCIA ARTIFICIAL ===== -->
-  <h3 class="work-category">Inteligência Artificial</h3>
-  <div class="row g-4 mb-5">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/ia-1.jpg
-        <div class="work-body">
-          <h4 class="work-title">Classificação de Eventos</h4>
-          <p class="work-desc">Modelo para categorizar chamados internos com base em NLP.</p>
-          https://github.com/seuusuario/ia-classificacaoView Repo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!-- ===== CATEGORIA: DIAGNÓSTICO DE PROCESSOS ===== -->
-  <h3 class="work-category">Diagnóstico de Processos</h3>
-  <div class="row g-4 mb-5">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/diagnostico-1.jpg
-        <div class="work-body">
-          <h4 class="work-title">Mapeamento AS-IS</h4>
-          <p class="work-desc">Análise do processo real, identificação de riscos e oportunidades.</p>
-          https://github.com/seuusuario/diagnostico-as-isView Repo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!-- ===== CATEGORIA: DASHBOARDS ===== -->
-  <h3 class="work-category">Dashboards</h3>
-  <div class="row g-4 mb-5">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/dashboard-1.jpg
-        <div class="work-body">
-          <h4 class="work-title">Dashboard de Governança</h4>
-          <p class="work-desc">Monitoramento de KPIs, eficiência e pipeline de projetos.</p>
-          https://github.com/seuusuario/dashboard-governancaView Repo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!-- ===== CATEGORIA: RELATÓRIOS ===== -->
-  <h3 class="work-category">Relatórios</h3>
-  <div class="row g-4">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="work-card">
-        img/work/relatorio-1.jpg
-        <div class="work-body">
-          <h4 class="work-title">Relatório Operacional</h4>
-          <p class="work-desc">Documentação de performance mensal e insights decisórios.</p>
-          https://github.com/seuusuario/relatorio-operacionalView Repo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
+  <!-- CONTACT (placeholder) -->
+  <section id="contact" class="section-block">
+    <h2 class="section-title mb-4">Contact</h2>
+    <p>Seu conteúdo de contato aqui (e-mail, LinkedIn, formulário, etc.).</p>
+  </section>
 
   <!-- JS -->
   <script src="js/main.js"></script>
