@@ -18,6 +18,8 @@ O objetivo foi reconstruir o fluxo real do processo, identificar ineficiências 
 
 Antes da ingestão dos dados no Celonis, foi necessário realizar tratamento e validação das informações para garantir a qualidade da análise.
 
+Por questões de confidencialidade, os dados apresentados foram adaptados ou mascarados.
+
 ## 🔗 Arquitetura e Fontes de Dados
 - Base de casos contendo os registros das ocorrências
 - Base de atividades contendo o histórico de eventos por ocorrência
