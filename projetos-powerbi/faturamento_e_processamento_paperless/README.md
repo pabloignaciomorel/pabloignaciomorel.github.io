@@ -75,6 +75,49 @@ Date.EndOfMonth([#"Mes/Ano arquivo"])
 
 DateTimeZone.SwitchZone([Column1], -3)
 
+## 🐍 Script de Consolidação (Python)
+
+Para possibilitar a análise dos dados, foi desenvolvido um script responsável por:
+
+- Processar múltiplos arquivos CSV enviados pelo fornecedor
+- Consolidar os dados em uma base única
+- Padronizar estrutura e nomenclaturas
+- Preparar os dados para consumo no Power BI
+
+O script pode ser encontrado neste repositório:
+📁 script_consolidacao.py
+
+
+### Exemplo do Script
+
+import os
+import pandas as pd
+pasta = 
+arquivos = [f for f in os.listdir(pasta) if f.endswith(".xlsx")]
+
+mapa_unidade = {
+    "CAVD": "Auto BB",
+    "CAVE": "Auto BB",
+    "UBMS": "Auto BB",
+    "NAUTICO": "Empresas"
+}
+
+mapa_documento = {
+    "7 - CARNE DE RESSARCIMENTO": "Carnê de Ressarcimento", 
+    "8 - CARTA DE AVISO DE RENOVAÃ‡ÃƒO": "Carta de Aviso de Renovação", 
+    "1 - ADESÃƒO - SEGURO NOVO": "Ap. e End.", 
+    "550 - 05 Exclusão de Risco por Sinistro": "Ap. e End."
+}
+
+mapa_parceiro_composto = {
+    "UBMS|0001-NÃO INFORMADO": "Brasil Veiculos",
+    "UBMS|0010-ESTILO": "Brasil Veiculos",
+    "VIMA|001-MAPFRE": "MAPFRE"
+}
+
+dfs = []
+resumo_arquivos = []
+
 ## 📷 Imagens
 
 ![Visão Consolidada](imagem1.png)  
