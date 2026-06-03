@@ -66,4 +66,5 @@ Total Solicitações = COUNT('Base Solicitações de Processos'[ID Forms])
 ## 📷 Imagens
 
 ![Visão geral](imagem1.png)  
-![Detalhamento](imagem2.png)
+![Projetos por Tipo Serviço](imagem2.png)
+![Rastreabilidade Solicitações](imagem3.png)
