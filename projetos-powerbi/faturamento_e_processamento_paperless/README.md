@@ -85,7 +85,7 @@ Para possibilitar a análise dos dados, foi desenvolvido um script responsável 
 - Preparar os dados para consumo no Power BI
 
 O script pode ser encontrado neste repositório:
-📁 script_consolidacao.py
+📁 script_consolidacao.ipynb
 
 
 ### Exemplo do Script
