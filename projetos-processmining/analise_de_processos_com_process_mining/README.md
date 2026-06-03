@@ -78,6 +78,47 @@ Antes da carga no Celonis, foi desenvolvido um script em Python para:
 - Criação de métricas de SLA e performance
 - Implementação de dashboards executivos e analíticos
 
+## 🐍 Script de Preparação de Dados (Python)
+
+Para possibilitar a análise no Process Mining, foi desenvolvido um script responsável por:
+
+- Identificar e remover ocorrências duplicadas na base de casos
+- Manter apenas o registro mais recente (última data de abertura)
+- Garantir unicidade do Case ID
+- Padronizar estrutura e nomenclaturas dos dados
+- Preparar o formato adequado para ingestão no Celonis
+
+O script pode ser encontrado neste repositório:  
+📁 Script_Tratamento_Ocorrencias.ipynb
+
+## 💻 Exemplo do Script
+
+import os
+from pathlib import Path
+import pandas as pd
+import csv
+
+CONFIGURAÇÃO
+PASTA = 
+ARQUIVO_SAIDA = 
+ARQUIVO_LOG = 
+
+COL_DATA = "DATA_ABERTURA"
+COL_CHAVE = "NUM_"
+
+FUNÇÕES AUXILIARES
+def detectar_delimitador(arquivo, enc="utf-8-sig", amostra_bytes=20000):
+    """Tenta detectar delimitador automaticamente (típico: ; , \t)."""
+    try:
+        with open(arquivo, "r", encoding=enc, errors="ignore") as f:
+            sample = f.read(amostra_bytes)
+        sniffer = csv.Sniffer()
+        dialect = sniffer.sniff(sample, delimiters=[",", ";", "\t", "|"])
+        return dialect.delimiter
+    except Exception:
+        # fallback: tab (muito comum em export de sistemas) ou ;
+        return "\t"
+
 ## 📷 Imagens
 
 ![Resumo executivo](imagem1.png)  
