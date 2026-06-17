@@ -56,6 +56,6 @@ A automação permite identificar automaticamente projetos desatualizados e gara
 
 ## 📷 Imagens
 
-![Fluxo da automação](imagem1.png) 
-![Fluxo da automação2](imagem2.png)
-![Envio de e-mails por área](imagem3.png)
+![Fluxo da automação](imagem5.png) 
+![Fluxo da automação2](imagem6.png)
+![Envio de e-mails por área](imagem7.png)
